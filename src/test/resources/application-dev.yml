@@ -1,0 +1,21 @@
+server:
+  port: 8090
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  datasource:
+    username: kwicweb
+    password: kwicweb
+    url: jdbc:mysql://23.23.134.201:3306/gourmet
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate.format_sql: true
+      database: mysql
+
